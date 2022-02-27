@@ -14,29 +14,40 @@
     <title>P5.js Sketch</title>
   </head>
   <body id="quotes-page">
-    <div class="topnav">
+    <div class="topnav" style="border-color: white;">
       <div id="back">
-        <a class="active" href="#home"><h6>HOME</h6></a>
+        <a class="active" href="#home"><h6><-</h6></a>
       </div>
-      <div id="navbar">
-        <a href="category1.html"><h6>DEMOGRAPHIC</h6></a>
-        <a href="#contact"><h6>COMPENSATION</h6></a>
-        <a href="quotes.html"><h6>EDUCATION</h6></a>
-        <a href="quotes.html"><h6>ABOUT</h6></a>
+      <div id="navbar" style="border-color: white;">
+        <a href="category1.html"><h6 style="color: white;">DEMOGRAPHIC</h6></a>
+        <a href="#contact"><h6 style="color: white;">COMPENSATION</h6></a>
+        <a href="quotes.html"><h6 style="color: white;">EDUCATION</h6></a>
+        <a href="quotes.html"><h6 style="color: white;">ABOUT</h6></a>
       </div>
     </div>
  
 
     <div class="quotes-wrapper">
+    
       <div class="quotes-navigation"><p>
  
               <p> What do designers have to say about</p>
               <h4>Only 25% of designers in leadership are BIPOC.</h4>
-              <div></div>
+              <div style="padding-top: 3rem;">
+              <div class="quote-link"><a>I was a Creative Director in San Francisco for
+                  over 10 years.</a></div>
+              <div class="quote-link"><a>I don't need to have, ""Black Lives
+                  Matter,"" attached to my topic just to be heard.</a></div>
+              <div class="quote-link"><a>Design is still a white, male, euro-centric
+                  profession.</a></div>
+                  <div class="quote-link"><a> Diversity is not only an important issue in our field but also in
+                      our schools/design programs.</a></div>
+              </div>
 
       </p></div>
-      <div class="col-5">
+      <div class="col-5" style="max-height:100vh;">
         <div id="quotes">
+          <div class="gradient-overlay"  style="top: 0; background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));"></div>
           <div id="quote-end-spacer"></div>
           <div class="quote" id="q1">
             <h4>
@@ -77,11 +88,12 @@
             </h4>
           </div>
           <div id="quote-end-spacer"></div>
+          <div class="gradient-overlay" style="bottom: 0;background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));"></div>
         </div>
       </div>
+      <div id="draggable">
+        </div>
     </div>
-    <div id="mydiv">
-      <div id="mydivheader">Move this div</div>
-    </div>
+
   </body>
 </html>
