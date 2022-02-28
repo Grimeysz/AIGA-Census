@@ -412,7 +412,6 @@ hr {
 
 /* QUOTES page*/
 .quotes-wrapper {
-  padding-left: 5vw;
   display: flex;
   column-gap: 10px;
   max-height: 90vh;
@@ -435,8 +434,11 @@ hr {
   flex-direction: column;
 }
 .quote-link {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 1.5rem;
 }
 .quote-link a {
   color: white;
@@ -512,7 +514,7 @@ hr {
 }
 
 #quotes-page {
-  max-height: 90vh;
+  max-height: 100vh;
   background-color: black;
   overflow-y: hidden;
 }

@@ -2,44 +2,13 @@ const hero = document.querySelector("[data-hero]");
 
 $(document).ready(function () {
   console.log("jquery loaded");
-  var windowHeight = $(window).height(),
-    gridTop = windowHeight * 0.4,
-    gridBottom = windowHeight * 0.5;
-
-  $("#quotes").scroll(function () {
-    console.log("scrolling");
-
-    var thisTop = $("#q1").offset().top - $(window).scrollTop();
-    if (thisTop <= gridTop && thisTop + $(this).height() >= gridBottom) {
-      $("#q1").css("background-color", "red");
-    } else {
-      $("#q1").css("background-color", "pink");
-    }
-
-    var thisTop2 = $("#q2").offset().top - $(window).scrollTop();
-    if (thisTop2 <= gridTop && thisTop2 + $(this).height() >= gridBottom) {
-      $("#q2").css("background-color", "red");
-    } else {
-      $("#q2").css("background-color", "pink");
-    }
-    var thisTop3 = $("#q3").offset().top - $(window).scrollTop();
-    if (thisTop3 <= gridTop && thisTop3 + $(this).height() >= gridBottom) {
-      $("#q3").css("background-color", "red");
-    } else {
-      $("#q3").css("background-color", "pink");
-    }
-    var thisTop4 = $("#q4").offset().top - $(window).scrollTop();
-    if (thisTop4 <= gridTop && thisTop4 + $(this).height() >= gridBottom) {
-      $("#q4").css("background-color", "red");
-    } else {
-      $("#q4").css("background-color", "pink");
-    }
-    var thisTop5 = $("#q5").offset().top - $(window).scrollTop();
-    if (thisTop5 <= gridTop && thisTop5 + $(this).height() >= gridBottom) {
-      $("#q5").css("background-color", "red");
-    } else {
-      $("#q5").css("background-color", "pink");
-    }
+  // handle links with @href started with '#' only
+  $("#l3").click(function () {
+    console.log("clicked");
+    $("#quotes").animate({
+      scrollTop: $("#q1").offset().top
+    });
+    $("#l3").css("background-color", "white", "text-color", "black");
   });
 });
 
