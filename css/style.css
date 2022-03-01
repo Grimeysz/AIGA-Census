@@ -187,10 +187,12 @@ h3 {
   font-size: 4rem;
 }
 h4 {
+  /*quotes text*/
   font-family: RadioGrotesk, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 2rem;
+  color: white;
 }
 
 .quote h4 {
@@ -202,7 +204,7 @@ h5 {
 }
 
 h6 {
-  /*quotes text*/
+  /*nav bar */
   font-family: RadioGrotesk, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -516,5 +518,37 @@ hr {
 #quotes-page {
   max-height: 100vh;
   background-color: black;
-  overflow-y: hidden;
+}
+#quotes {
+  width: 50vw;
+  height: 90vh;
+}
+
+.my-slider .slider {
+  padding: 10px;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.my-slider {
+  background-color: green;
+}
+
+.slides01 {
+}
+.slides02 {
+  background-color: blue;
+}
+.slides03 {
+  background-color: yellow;
+}
+
+.slides04 {
+  background-color: red;
+}
+.slides05 {
+  background-color: blue;
+}
+.slides06 {
+  background-color: yellow;
 }

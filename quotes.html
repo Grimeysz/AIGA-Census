@@ -6,6 +6,8 @@
       async
     ></script>
     <script src="script.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -45,50 +47,31 @@
               </div>
 
       </p></div>
-      <div class="col-5" style="max-height:100vh;">
-        <div id="quotes">
-          <div class="gradient-overlay"  style="top: 0; background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));"></div>
-          <div id="quote-end-spacer"></div>
-          <div class="quote" id="q1">
-            <h4>
-              Lack of diversity - I was a Creative Director in San Francisco for
-              over 10 years. I did not interview a single African-American
-              candidate for any graphic design, web design, or copy writing
-              position.
-            </h4>
+      <div class="col-5" style="max-height:100vh;" id="quotes">
+        <div class="my-slider">
+          <div class="slider" style ="background-color: red;">
+            <div><h4>Lack of diversity - I was a Creative Director in San Francisco for over 10 years. I did not interview a single African-American candidate for any graphic design, web design, or copy writing position.</h4></div>
           </div>
-
-          <div class="quote" id="q2">
-            <h4>
-              As a Black woman, I feel the voices in Black Creative/Art
-              Directors are limited/non existent. Unless we are talking about
-              social issues, we're not invited to the conversation. While I care
-              about social issues, I don't want to talk about that topic to be
-              the only reason I talk design. I don't need to have, ""Black Lives
-              Matter,"" attached to my topic just to be heard.
-            </h4>
+          <div class="slider">
+            <div><h4>Diversity in the upper echelons of the industry is one of the greatest challenges. Design is still a white, male, euro-centric profession.</h4></div>
           </div>
-          <div class="quote" id="q3">
-            <h4>
-              Diversity in the upper echelons of the industry is one of the
-              greatest challenges. Design is still a white, male, euro-centric
-              profession.
-            </h4>
+          <div class="slider" style ="background-color: red;">
+            <div><h4>Diversity is not only an important issue in our field but also in our schools/design programs. We need diverse faculty and courses/projects that address issues around gender equity, inclusivity, accessibility, and the decolonization of the design canon. Ultimately, we need design programs willing to explore, discuss, and develop the kind of critical awareness and technological engagement that can activate freedom in a post-truth era.</h4></div>
           </div>
-          <div class="quote" id="q4">
-            <h4>
-              Diversity is not only an important issue in our field but also in
-              our schools/design programs. We need diverse faculty and
-              courses/projects that address issues around gender equity,
-              inclusivity, accessibility, and the decolonization of the design
-              canon. Ultimately, we need design programs willing to explore,
-              discuss, and develop the kind of critical awareness and
-              technological engagement that can activate freedom in a post-truth
-              era.
-            </h4>
+          <div class="slider">
+            <div><h4>Lack of diversity - I was a Creative Director in San Francisco for over 10 years. I did not interview a single African-American candidate for any graphic design, web design, or copy writing position.</h4></div>
           </div>
-          <div id="quote-end-spacer"></div>
-          <div class="gradient-overlay" style="bottom: 0;background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));"></div>
+          <div class="slider"style ="background-color: red;">
+            <div><h4>Lack of diversity - I was a Creative Director in San Francisco for over 10 years. I did not interview a single African-American candidate for any graphic design, web design, or copy writing position.</h4></div>
+          </div>
+          <div class="slider">
+            <div><h4>Lack of diversity - I was a Creative Director in San Francisco for over 10 years. I did not interview a single African-American candidate for any graphic design, web design, or copy writing position.</h4></div>
+          </div>
+        </div>
+        <div id="controls">
+          <button class="previous">Prev</button>
+          <button class="next">Next</button>
+          <button class="auto"></button>
         </div>
       </div>
       <div id="draggable">
@@ -96,4 +79,5 @@
     </div>
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" async></script>
 </html>

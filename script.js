@@ -86,3 +86,18 @@ function drag(e) {
 function setTranslate(xPos, yPos, el) {
   el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
 }
+//slider
+let slider = tns({
+  container: ".my-slider",
+  autoHeight: true,
+  items: 3,
+  slideBy: "page",
+  mouseDrag: "mouseDrag",
+  axis: "vertical",
+  autoplay: false,
+  autoplayButton: ".auto",
+  autoplayText: ["Start", "Stop"],
+  controlsContainer: "#controls",
+  prevButton: ".previous",
+  nextButton: ".next"
+});
