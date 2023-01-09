@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/jxd6xzy.css">
+    <link href="styles/style.css" rel="stylesheet" />
+    
+
+    <title>Education</title>
+  </head>
+  <body class="categorypage">
+
+    <div class="topnav" style="border-color: white;">
+        <div id="navbarback" style="background-color: #222222; ">
+          <a class="active" href="javascript:history.back()" style="color: #222222;"><h6 style="color: white;">BACK</h6></a>
+        </div>
+        <div id="navbar" style="border-color: #222222;">
+          <a href="home.html"><h6 >UNCOVER</h6></a>
+          <a href="compensation.html"><h6 >COMPENSATION</h6></a>
+          <a href="education.html"><h6 >EDUCATION</h6></a>
+          <a href="demographics.html"><h6 >DEMOGRAPHICS</h6></a>
+        </div>
+      </div>
+      <section>
+        <div  class="col-6"><h1>COMPENSATION</h1></div>
+ 
+        <div class="col-3" id="category-description" style="position: absolute; bottom: 10vh; pointer-events: none; ">
+         
+
+            <p><span class="description-subheader">Do we treat designers themselves with as much value as we do the work they create?</span></p>
+             <p>In more recent times, design has become more coveted than ever. Popularity is at an all-time high and it seems as though designers’ skills are becoming sought after. But are the people behind the work being done just as valued? Are we providing opportunity for designers to work comfortably? </p>
+             
+             </div>
+            
+             <div class="data-point-wrapper" style="top: 35%; left: 8%; transform: rotate(8deg);">
+
+                 <div class="data-point" >
+                    <div class="blob"></div>
+                    <div class="data-wrapper"> 
+                      </a>
+                      <a href="C-rock-solid.html"><h3>4%</h3></a>
+                <h5><a href="C-rock-solid.html">Only 4% of Designers feel 'Rock Solid' in their current position</a></h5>
+              </a></div>
+            </div>
+   
+              </div>
+              <div class="data-point-wrapper" style="top: 45%; left: 33%; transform: rotate(-8deg);">
+                <div class="data-point" >
+                    <div class="blob"></div>      
+                    <div class="data-wrapper">
+                        <h3><a href="c-satisfaction.html">37%</a></h3>
+                    <h5><a href="c-satisfaction.html">of young designers are not satisfied with their current role.</a><h5>
+           
+                   </div>
+                   </div>
+                   
+              </div>
+                <div class="data-point-wrapper" style="top: 30%; left: 58%; transform: rotate(10deg);">
+                    <div class="data-point" >
+                        <div class="blob"></div>
+                        <div class="data-wrapper">
+                         <h3><a href="C-family.html">85%</a></h3>
+                        <h5><a href="C-family.html">of designers prioritizes family (7972) but only 38% (3628) receive child or parental related benefits.</a><h5>
+                        </div>
+                        </div>
+                </div>
+                <div class="data-point-wrapper" style="top: 50%; left: 78%; transform: rotate(-10deg);">
+                    <div class="data-point" >
+                        <div class="blob"></div>
+                        <div class="data-wrapper">
+                        <h3><a href="C-big-cities.html">57%</a></h3>
+                        <h5><a href="C-big-cities.html">of job concerns come from designers living outside of big cities.</a><h5>
+                        </div>
+                        </div>
+                </div>
+
+        <!-- hidden divs -->
+
+        <div class="selected-circle" id="c-rock-solid" style="top: 30%; left: 8%; transform: rotate(8deg);">
+             <div class="data-wrapper">            
+               <a href="C-rock-solid.html"><h3>4%</h3></a>
+         <h5><a href="C-rock-solid.html">Only 4% of Designers feel 'Rock Solid' in their current position</a></h5></a>
+     </div>
+       </div>
+
+       <div class="selected-circle" id="c-satisfaction" style="top: 40%; left: 33%; transform: rotate(-8deg);">     
+             <div class="data-wrapper">
+                 <h3><a href="c-satisfaction.html">37%</a></h3>
+             <h5><a href="c-satisfaction.html">of young designers are not satisfied with their current role.</a><h5>
+            </div>      
+       </div>
+
+         <div class="selected-circle" id="c-family" style="top: 25%; left: 58%; transform: rotate(10deg);">
+                 <div class="data-wrapper">
+                  <h3><a href="C-family.html">85%</a></h3>
+                 <h5><a href="C-family.html">of designers prioritizes family (7972) but only 38% (3628) receive child or parental related benefits.</a><h5>
+                 </div>
+         </div>
+
+         <div class="selected-circle"id="c-big-cities" style="top: 45%; left: 78%; transform: rotate(-10deg);">
+                 <div class="data-wrapper">
+                 <h3><a href="C-big-cities.html">57%</a></h3>
+                 <h5><a href="C-big-cities.html">of job concerns come from designers living outside of big cities.</a><h5>
+                 </div>
+         </div>
+           
+        </section>
+
+        <span id="circle" class="circle"></span>
+    <img id="homepage-gif" src="gifs/critical-issues.gif" style="bottom: 3vh; left: -5vw;">
+  </body>
+  <script
+    async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  ></script>
+  <script async src="script/script.js"></script>
+  <script>
+       let x = sessionStorage.getItem('compensation');
+  x = true;
+  sessionStorage.setItem('compensation', x);
+
+  let a = sessionStorage.getItem('c-big-cities');
+  let b = sessionStorage.getItem('c-family');
+  let c = sessionStorage.getItem('c-rock-solid');
+  let d = sessionStorage.getItem('c-satisfaction');
+
+if(a === null){
+  document.getElementById("c-big-cities").style.display = 'none';
+}
+if(b === null){
+  document.getElementById("c-family").style.display = 'none';
+}
+if(c === null){
+  document.getElementById("c-rock-solid").style.display = 'none';
+}
+if(d === null){
+  document.getElementById("c-satisfaction").style.display = 'none';
+}
+  
+  </script>
+</html>

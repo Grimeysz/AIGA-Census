@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/jxd6xzy.css">
+    <link href="styles/style.css" rel="stylesheet" />
+    
+
+    <title>Education</title>
+  </head>
+  <body class="categorypage">
+
+    <div class="topnav" style="border-color: white;">
+        <div id="navbarback" style="background-color: #222222; ">
+          <a class="active" href="javascript:history.back()" style="color: #222222;"><h6 style="color: white;">BACK</h6></a>
+        </div>
+        <div id="navbar" style="border-color: #222222;">
+          <a href="home.html"><h6 >UNCOVER</h6></a>
+          <a href="compensation.html"><h6 >COMPENSATION</h6></a>
+          <a href="education.html"><h6 >EDUCATION</h6></a>
+          <a href="demographics.html"><h6 >DEMOGRAPHICS</h6></a>
+        </div>
+      </div>
+      <section>
+        <div  class="col-6"><h1>EDUCATION</h1></div>
+ 
+        <div class="col-3" id="category-description" style="position: absolute; bottom: 10vh; pointer-events: none; ">
+         
+
+            
+            <p><span class="description-subheader">What does it mean to become a designer and how does one do it?</span></p>
+             <p>Becoming a professional of any career is a lengthy and difficult process, and for designers, it becomes even more confusing. With increased access to resources for many young designers, this begs the question: What is the right way to become a designer? Does one have to go to school? Are some just born with it? Is education even accesssible for most people?</p>
+ 
+             </div>
+             <div class="data-point-wrapper" style="top: 35%; left: 18%; transform: rotate(8deg);">
+
+                 <div class="data-point" >
+                    <div class="blob"></div>
+                    <div class="data-wrapper"> 
+                <h3><a href="E-college-education.html">49%</a></h3>
+                <h5><a href="E-college-education.html">49% of Designers' didn't attend college or a credited program. </a></h5>
+                </div>
+            </div>
+              </div>
+                <div class="data-point-wrapper" style="top: 30%; left: 45%; transform: rotate(10deg);">
+                    <div class="data-point" >
+                        <div class="blob"></div>
+                        <div class="data-wrapper">
+                        
+                            <h3><a href="E-machine-learning.html">64%</a></h3>
+                            <h5><a href="E-machine-learning.html">of designers believe AI / Machine learning will have the biggest impact on design.</a><h5>
+                        </div>
+                        </div>
+                </div>
+                <div class="data-point-wrapper" style="top: 50%; left: 65%; transform: rotate(-10deg);">
+                    <div class="data-point" >
+                        <div class="blob"></div>
+                        <div class="data-wrapper">
+                        <h3><a href="E-college-degree.html">40%</a></h3>
+                        <h5><a href="E-college-degree.html">Out of those who didn't earn a degree from college, 40% are under 30 years old.</a><h5>
+                        </div>
+                        </div>
+                </div>
+               <div class="data-point-wrapper" style="top: 30%; left: 80%; transform: rotate(8deg);">
+                <div class="data-point" >
+                    <div class="blob"></div>
+                    <div class="data-wrapper">
+                        <h3><a href="E-future.html">37%</a></h3>                 
+                        <h5><a href="E-future.html">of students feel a little concerned about their future</a></h5>
+                    </div>                             
+                  </div>
+               </div>
+
+               <!-- hidden divs -->
+               <div class="selected-circle"id="e-college-education" style="top: 30%; left: 8%; transform: rotate(8deg);">
+                   <div class="data-wrapper"> 
+               <h3><a href="E-college-education.html">49%</a></h3>
+               <h5><a href="E-college-education.html">49% of Designers' didn't attend college or a credited program. </a></h5>
+           </div>          
+             </div>
+
+               <div class="selected-circle" id="e-machine-learning" style="top: 25%; left: 35%; transform: rotate(10deg);">
+                       <div class="data-wrapper">
+                           <h3><a href="E-machine-learning.html">64%</a></h3>
+                           <h5><a href="E-machine-learning.html">of designers believe AI / Machine learning will have the biggest impact on design.</a><h5>
+                       </div>
+               </div>
+
+               <div class="selected-circle" id="e-college-degree" style="top: 45%; left: 55%; transform: rotate(-10deg);">
+                       <div class="data-wrapper">
+                       <h3><a href="E-college-degree.html">40%</a></h3>
+                       <h5><a href="E-college-degree.html">Out of those who didn't earn a degree from college, 40% are under 30 years old.</a><h5>
+                       </div>
+               </div>
+
+              <div class="selected-circle" id="e-future" style="top: 25%; left: 70%; transform: rotate(8deg);">
+                   <div class="data-wrapper">
+                       <h3><a href="E-future.html">37%</a></h3>                 
+                       <h5><a href="E-future.html">of students feel a little concerned about their future</a></h5>                           
+                 </div>
+              </div>
+
+        </section>
+
+        <span id="circle" class="circle"></span>
+  
+    
+  </body>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  ></script>
+  <script src="script/script.js"></script>
+  <script>
+
+let a = sessionStorage.getItem('e-college-degree');
+  let b = sessionStorage.getItem('e-college-education');
+  let c = sessionStorage.getItem('e-future');
+  let d = sessionStorage.getItem('e-machine-learning');
+
+if(a === null){
+  document.getElementById("e-college-degree").style.display = 'none';
+}
+if(b === null){
+  document.getElementById("e-college-education").style.display = 'none';
+}
+if(c === null){
+  document.getElementById("e-future").style.display = 'none';
+}
+if(d === null){
+  document.getElementById("e-machine-learning").style.display = 'none';
+}
+
+       let e = sessionStorage.getItem('education');
+  e = true;
+  sessionStorage.setItem('education', e);
+  </script>
+</html>
