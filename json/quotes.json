@@ -606,6 +606,15 @@
     "length": 5,
     "quotes": [
       {
+        "quote": "This survey was geared to people that had a very traditional path in the job world which doesn't apply to a lot of people, especially working mothers. I freelance and work part time because I have found a full time job in this industry would be too demanding time wise to be present for my family (sick days, late hours etc).",
+        "summary": "There is now a lot of business that undermines the value…",
+        "age": 43,
+        "race": "White / Caucasian",
+        "gender": "Female",
+        "role": "Owner"
+      },
+
+      {
         "quote": "Crap work/life balance. Everyone is trying to 'hustle' and replying to work emails at midnight as if it's ok. How can you raise a family if you're working 24/7?",
         "summary": "Everyone’s trying to hustle…",
         "Age": 34,
@@ -614,16 +623,9 @@
         "role": "Creative director"
        
       },
+      
       {
-        "quote": "This survey was geared to people that had a very traditional path in the job world which doesn't apply to a lot of people, especially working mothers. I freelance and work part time because I have found a full time job in this industry would be too demanding time wise to be present for my family (sick days, late hours etc). I have also found that, as a freelancer, there is now a lot of business that undermines the value of a professional graphic designer.",
-        "summary": "There is now a lot of business that undermines the value…",
-        "age": 43,
-        "race": "White / Caucasian",
-        "gender": "Female",
-        "role": "Owner"
-      },
-      {
-        "quote": "Employers are taking advantage of the freelance workforce by not having to provide benefits (healthcare, paid vacation time, retirement accounts, etc.) and, in most instances, requiring one to bring their own laptop and to be onsite full time. This means a freelancer can only work on that employer's projects, which is not always realistic or financially feasible, especially with no benefits. As a freelancer, I need to make sure to have flexibility and numerous clients and projects going at all times to make a decent living.",
+        "quote": "Employers are taking advantage of the freelance workforce by not having to provide benefits (healthcare, paid vacation time, retirement accounts, etc).This means a freelancer can only work on that employer's projects, which is not always realistic or financially feasible, especially with no benefits. As a freelancer, I need to make sure to have flexibility and numerous clients and projects going at all times to make a decent living.",
         "summary": "Taking advantage of freelance workforce…",
         "age": 43,
         "race": "Asian",
