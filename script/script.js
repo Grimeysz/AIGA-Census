@@ -103,7 +103,6 @@ for (var i = 0; i < 5; i++){
       
       quoteProgression = $(this).index()-2;
       transformNav(quoteProgression, jsonData)
-     slider.goTo(3);
   
   });
   }; 

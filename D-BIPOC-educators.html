@@ -31,14 +31,14 @@
        <div class="quotes-navigation">
          <div><h2>What do POC designers have to say about how</h2 ></div>
          <div><h5>Over <span class="yellow">70% </span>of Designers that are educators are caucasian.</h5></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
-         <div class="quote-link"></div>
+         <div id= "0" class="quote-link"></div>
+         <div id= "1" class="quote-link"></div>
+         <div id= "2" class="quote-link"></div>
+         <div id= "3" class="quote-link"></div>
+         <div id= "4" class="quote-link"></div>
+         <div id= "5" class="quote-link"></div>
+         <div id= "6" class="quote-link"></div>
+         <div id= "7" class="quote-link"></div>
         
          <div id="controls">
           <button class="previous"></button>
@@ -120,9 +120,24 @@ let e = sessionStorage.getItem('d-bipoc-educators');
           }
       }
   });
+  $('.quote-link').each(function(index) {
+  $(this).click(function() {
+    if(index==0){
+      slider.goTo($('.quote-link').length)
+      transformNav(0, jsonData)
+    }
+    else {
+      console.log("at", index)
+    slider.goTo(index-1);
+    transformNav(index, jsonData)
+    }
+   }
+  );
+});
   })
   .catch(function (err) {
       console.log('error: ' + err);
   });
+
   </script>
 </html>

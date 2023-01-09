@@ -120,6 +120,20 @@
           }
       }
   });
+  $('.quote-link').each(function(index) {
+  $(this).click(function() {
+    if(index==0){
+      slider.goTo($('.quote-link').length)
+      transformNav(0, jsonData)
+    }
+    else {
+      console.log("at", index)
+    slider.goTo(index-1);
+    transformNav(index, jsonData)
+    }
+   }
+  );
+});
   })
   .catch(function (err) {
       console.log('error: ' + err);
