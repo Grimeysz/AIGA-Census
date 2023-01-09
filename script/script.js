@@ -3,6 +3,15 @@ var quoteProgression = 0;
 var jsonData;
 var slider;
 // Give the parameter a variable name
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
 
 var dynamicContent = window.location.pathname;
 
