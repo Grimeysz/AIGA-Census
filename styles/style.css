@@ -386,6 +386,20 @@ hr {
  
 }
 
+#navbar-quotes {
+  border-color: white;
+  border-width: 1px;
+  display: flex;
+  border-style: solid;
+  margin: 10px;
+  border-radius: 25px;
+  z-index: 20;
+ 
+}
+#navbar-quotes a {
+  color: white;
+}
+
 #navbarback {
   background-color: white;
   margin: 10px;
