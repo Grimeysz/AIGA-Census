@@ -4,11 +4,6 @@ var jsonData;
 var slider;
 // Give the parameter a variable name
 
-if(!window.location.hash.includes("#reloaded")) {
-  window.location.href += "#reloaded";
-  window.location.reload()
-}
-
 var dynamicContent = window.location.pathname;
 
 $(document).ready(function () {
